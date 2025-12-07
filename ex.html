@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+
+    body {
+      background: #0d0f1a;
+      color: #fff;
+      padding: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .resume-wrapper {
+      width: 100%;
+      max-width: 1100px;
+      background: #111427;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 30px rgba(0,0,0,0.5);
+      animation: fade 1.2s ease-in-out;
+    }
+
+    @keyframes fade { from {opacity:0; transform:scale(.97);} to {opacity:1; transform:scale(1);} }
+
+    /* Top Header */
+    .top-header {
+      background: linear-gradient(135deg, #6c5ce7, #00cec9);
+      padding: 40px;
+      text-align: center;
+    }
+
+    .top-header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 5px solid rgba(255,255,255,0.8);
+      box-shadow: 0 0 20px rgba(255,255,255,0.6);
+    }
+
+    .top-header h1 { font-size: 40px; margin-top: 20px; }
+    .top-header p { font-size: 18px; opacity: 0.9; }
+
+    /* Section Layout */
+    .section { padding: 40px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+    .section h2 { font-size: 28px; margin-bottom: 20px; border-left: 6px solid #00cec9; padding-left: 12px; }
+
+    /* Cards */
+    .card {
+      background: rgba(255,255,255,0.04);
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      transition: .3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.08);
+    }
+
+    /* Skills */
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+      gap: 15px;
+    }
+
+    .skill-box {
+      padding: 12px;
+      text-align: center;
+      border-radius: 12px;
+      background: #22263d;
+      font-weight: bold;
+      transition: .3s;
+    }
+
+    .skill-box:hover { background: #6c5ce7; transform: scale(1.05); }
+
+    /* Timeline */
+    .timeline { border-left: 3px solid #6c5ce7; padding-left: 20px; }
+
+    .time-item {
+      margin-bottom: 25px;
+      position: relative;
+    }
+
+    .time-item::before {
+      content: "";
+      width: 14px;
+      height: 14px;
+      background: #6c5ce7;
+      border-radius: 50%;
+      position: absolute;
+      left: -31px;
+      top: 5px;
+    }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      opacity: .5;
+    }
+  </style>
+</head>
+<body>
+  <div class="resume-wrapper">
+
+    <!-- Header -->
+    <div class="top-header">
+      <img src="https://i.postimg.cc/K8Yw7S9V/profilepic.png" />
+      <h1>Monika Jangir</h1>
+      <p>Cybersecurity • Web Developer • Software Engineer</p>
+    </div>
+
+    <!-- About -->
+    <div class="section">
+      <h2>About Me</h2>
+      <div class="card">
+        Passionate cybersecurity learner and full‑stack web developer with hands-on experience in secure application development,
+        malware analysis basics, and frontend development. Certified by ISC2 and ISRO IIRS.
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="section">
+      <h2>Technical Skills</h2>
+      <div class="skill-grid">
+        <div class="skill-box">HTML</div>
+        <div class="skill-box">CSS</div>
+        <div class="skill-box">JavaScript</div>
+        <div class="skill-box">React</div>
+        <div class="skill-box">Python</div>
+        <div class="skill-box">C</div>
+        <div class="skill-box">Java</div>
+        <div class="skill-box">Node.js</div>
+        <div class="skill-box">Cybersecurity</div>
+        <div class="skill-box">Malware Analysis</div>
+        <div class="skill-box">AWS Basics</div>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="section">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <div class="time-item">
+          <h3>Bluestock — SDE Intern (2025)</h3>
+          <p>Worked on backend APIs, optimization, and secure code implementation.</p>
+        </div>
+        <div class="time-item">
+          <h3>Bharat Intern — Web Developer (2023)</h3>
+          <p>Built responsive UI projects using HTML, CSS, JS.</p>
+        </div>
+        <div class="time-item">
+          <h3>Muskurahat Foundation — Marketing Intern (2024)</h3>
+          <p>Managed campaigns, outreach, and digital promotions.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+      <h2>Education</h2>
+      <div class="card">
+        <strong>B.Tech CSE (Cyber)</strong> — Gurugram University (CGPA 8.5)
+      </div>
+      <div class="card">
+        <strong>PG Diploma — Cyber Defense</strong>
+      </div>
+    </div>
+
+    <div class="footer">© 2025 Monika Jangir — Interactive Resume</div>
+  </div>
+</body>
+</html>
